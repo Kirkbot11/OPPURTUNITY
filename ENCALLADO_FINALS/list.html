@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunity Hunt</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/Icon.jpg" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <link rel="icon" href="images/LOGo.png" type="image/png">
+</head>
+<body>
+  <a href="main.html" class="LOGO">
+    <img src="images/lugo.png" alt="Opportunity Hunt Logo" class="logo-img">
+    OPPORTUNITY HUNT
+  </a>
+
+  <div class="navs">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="list.html">List of Schools</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <h2>Philippine University Ranking</h2>
+    <div class="filters">
+      <label for="location">Location:</label>
+      <select id="location">
+        <option>Location</option>
+      </select>
+      <label for="year">Year:</label>
+      <select id="year">
+        <option>Year</option>
+      </select>
+      <label for="school">School:</label>
+      <select id="school">
+        <option>School</option>
+      </select>
+      <button id="updateResults">Update Results</button>
+    </div>
+
+    <section class="ranking">
+      <h3>Philippine University Ranking 2024</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Weighted Ranking<br>(every year)</th>
+            <th>Rank In</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTable">
+        </tbody>
+      </table>
+    </section>
+  </main> 
+  
+  <footer>
+    <p>© Kirk Andrei Encallado 2024</p>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/list.js"></script>
+
+</body>
+</html>

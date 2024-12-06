@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunity Hunt</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/college.css">
+  <link rel="icon" href="images/LOGo.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+  <a href="main.html" class="LOGO">
+    <img src="images/lugo.png" alt="Opportunity Hunt Logo" class="logo-img">
+    OPPORTUNITY HUNT
+  </a>
+
+  <div class="navs">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="list.html">List of Schools</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Sidebar Filters Section -->
+    <aside class="filters">
+      <h2>Filters</h2>
+      
+      <!-- Line and "Clear all filters" -->
+      <div class="filters-header">
+        <div class="line"></div>
+        <a href="#" class="clear-filters">Clear all filters</a>
+      </div>
+      
+      <form>
+        <!-- Field of Study -->
+        <div class="filter-group">
+          <label for="field-of-study">Field of Study</label>
+          <select id="field-of-study">
+            <option value="">Select a field</option>
+          </select>
+        </div>
+        
+        <!-- Location -->
+        <div class="filter-group">
+          <label for="location">Location</label>
+          <select id="location">
+            <option value="">Select a location</option>
+          </select>
+        </div>
+        
+        <!-- Degree Level -->
+        <div class="filter-group">
+          <label for="degree-level">Degree level</label>
+          <select id="degree-level">
+            <option value="any">Any Degree</option>
+            <option value="bachelor">Bachelor Degree</option>
+            <option value="masteral">Masteral Degree</option>
+            <option value="doctoral">Doctoral Degree</option>
+          </select>
+        </div>
+        
+        <!-- School Type -->
+        <div class="filter-group">
+          <label>School Type</label>
+          <div class="radio-group">
+            <input type="radio" id="public" name="school-type" value="public">
+            <label for="public">Public</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="private" name="school-type" value="private">
+            <label for="private">Private</label>
+          </div>
+        </div>
+        
+        <!-- Entrance Exam -->
+        <div class="filter-group">
+          <label>Entrance Exam</label>
+          <div class="radio-group">
+            <input type="radio" id="required" name="exam-requirement" value="required">
+            <label for="required">Required</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="not-required" name="exam-requirement" value="not-required">
+            <label for="not-required">Not Required</label>
+          </div>
+        </div>
+        
+        <!-- Accept Online Applications -->
+        <div class="filter-group">
+          <label>Accept Online Applications</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="online-applications" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="no" name="online-applications" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+    
+        <button class="back-to-top">Back to Top</button>
+      </form>
+    </aside>
+  </div>
+  
+  
+
+    <div class = "headerContent">
+      <div class ="Contents">
+        <h2>Universities and College in Metro Manila</h2>
+        <p>A list of universities and colleges offering Bachelor's, Masteral and Doctoral courses in Metro Manila, Philippines.  
+          Whenever possible we provide full details about the courses in each of the schools, including tuition fees, admission requirements, 
+          course description and the admission phone number.</p>
+          <hr style="border: 1px solid black; width: 80%; margin: 20px auto;">
+          <h1>Results (349)</h1> 
+      </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="card-content">
+          <button class="save-btn">Save</button>
+          <div class="university-info">
+            <img src="images/RTU.jpg" alt="University Logo">
+            <h2>Rizal Technological University</h2>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/location.jpg" alt="Location Icon">
+            <p class="bold">State University, Mandaluyong City, Metro Manila</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Master's Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/money.jpg" alt="Tuition Icon">
+            <p class="text">Doctoral Degree: ₱10,000 - ₱20,000 per year</p>
+          </div>
+    
+          <div class="info-item">
+            <img src="images/offical.jpg" alt="Website Icon">
+            <a>Apply to this school via their official website</a>
+          </div>
+    
+          <div class="info-item">
+            <a class="statusname">Status: </a><a class="status"> On-Going</a>
+          </div>
+          <div class="info-item">
+            <a class="status">Included in the Free Tuition Law</a>
+          </div>
+          <div class="short-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum phasellus felis dapibus est urna finibus mauris. Tincidunt donec vel rutrum natoque urna.
+        </div>
+    
+          <div class="buttons">
+            <button>Overview</button>
+            <button>Contact This School</button>
+            <button class = "view-ranking-btn">View University Rankings</button>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  
+  <footer>
+    <p>@Kirk Andrei Encallado 2024</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/jsclear.js"></script>
+
+</body>
+</html>
